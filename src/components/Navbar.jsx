@@ -48,7 +48,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={` w-full bg-white navbar fixed top-0 left-0 ${
+        className={`w-full bg-white navbar fixed top-0 left-0 ${
           scrolling ? "scrolling" : ""
         }`}
       >
@@ -57,7 +57,7 @@ function Navbar() {
         >
           <div className="inline-flex items-center space-x-4">
             <span>
-              <img src={logo} alt="logo" width="80" />
+              <img src={logo} alt="logo" width="90" />
             </span>
           </div>
           <div className="hidden grow place-content-around lg:flex pr-16">
@@ -66,7 +66,7 @@ function Navbar() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                    className={`text-sm font-semibold ${scrolling ? "item" : "" }`}
                   >
                     {item.name}
                   </a>
