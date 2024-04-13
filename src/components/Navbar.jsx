@@ -57,7 +57,7 @@ function Navbar() {
         >
           <div className="inline-flex items-center space-x-4">
             <span>
-              <img src={logo} alt="logo" width="90" />
+              <img src={logo} alt="logo" width="100" />
             </span>
           </div>
           <div className="hidden grow place-content-around lg:flex pr-16">
@@ -76,11 +76,11 @@ function Navbar() {
           </div>
 
           <div className="lg:hidden  px-4 pl-4 ">
-            <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
+            <Menu onClick={toggleMenu} className={`h-6 w-6 cursor-pointer text-${scrolling ? "white" : "black" }`} />
           </div>
           {isMenuOpen && (
-            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-              <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform transition lg:hidden">
+              <div className="divide-y-2 divide-gray-50 bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="px-5 pb-6 pt-5">
                   <div className="flex items-center justify-center ">
                     <div className="inline-flex items-center space-x-4 ">

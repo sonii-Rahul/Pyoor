@@ -1,12 +1,13 @@
 .navbar {
     background-color: "transparent";
     transition: 1s ease;
+    z-index: 100;
   }
   
   .navbar.scrolling {
     background-color: black;
-    opacity: 0.9;
-    z-index: 99;
+    opacity: 0.97;
+    /* z-index: 99; */
   }
 
   .item{
