@@ -1,14 +1,11 @@
-import React from 'react'
-import logo from'../assets/logo1.svg'
-let footermain=" relative overflow-hidden bg-zinc-100  py-8 "
-let maindiv="container relative z-10 mx-auto px-4"
-let innerdiv="-m-8 flex flex-wrap items-center justify-between"
-let innerequal="w-auto p-8"
-
-
+import React from "react";
+import logo from "../assets/images/logo1.svg";
+let footermain = " relative overflow-hidden bg-zinc-100  py-8 ";
+let maindiv = "container relative z-10 mx-auto px-4";
+let innerdiv = "-m-8 flex flex-wrap items-center justify-between";
+let innerequal = "w-auto p-8";
 
 export function FooterOne() {
-  
   return (
     <section className={footermain}>
       <div className={maindiv}>
@@ -16,32 +13,41 @@ export function FooterOne() {
           <div className={innerequal}>
             <a href="#">
               <div className="inline-flex items-center">
-              <img src={logo} alt='logo'   width="125"
-                
-                />
-               
+                <img src={logo} alt="logo" width="125" />
               </div>
             </a>
           </div>
           <div className={innerequal}>
             <ul className="-m-5 flex flex-wrap items-center">
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a
+                  className="font-medium text-gray-600 hover:text-gray-700"
+                  href="#"
+                >
                   Privacy Policy
                 </a>
               </li>
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a
+                  className="font-medium text-gray-600 hover:text-gray-700"
+                  href="#"
+                >
                   Terms of Service
                 </a>
               </li>
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a
+                  className="font-medium text-gray-600 hover:text-gray-700"
+                  href="#"
+                >
                   Return Policy
                 </a>
               </li>
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a
+                  className="font-medium text-gray-600 hover:text-gray-700"
+                  href="#"
+                >
                   Contact Us
                 </a>
               </li>
@@ -108,5 +114,5 @@ export function FooterOne() {
         </div>
       </div>
     </section>
-  )
+  );
 }
