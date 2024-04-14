@@ -1,7 +1,7 @@
 import React, {useState } from "react";
 import "../assets/css/SlickImages.css";
 import Slider from "react-slick";
-import SLIDER_IMAGES from "./SliderImages";
+import SLIDER_IMAGES from "../assets/constants/SliderImages";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
