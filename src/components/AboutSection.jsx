@@ -3,7 +3,7 @@ import "../assets/css/AboutSection.css";
 import FirstImage from "../assets/images/about.jpg";
 function AboutSection() {
   return (
-    <div className="my-8 mx-16 ">
+    <div className="lg:my-8 lg:mx-16 m-6 ">
       <div className="container mx-auto">
         <div className="grid grid-cols-6 gap-4">
           {/* Left side text */}
@@ -34,7 +34,7 @@ function AboutSection() {
                   heights.
                 </p>
                 <h2 className="text-2xl font-bold mb-4">
-                  <span className="text-blue-500">About</span> Sambhar Lake
+                  <span className="text-blue-500">Source -</span> Sambhar Lake
                 </h2>
                 <p className="mb-4 text-gray-600">
                   Nestled in Rajasthan's arid expanse, Sambhar Lake holds the
