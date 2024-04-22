@@ -1,9 +1,16 @@
 import React from "react";
 import "../assets/css/AboutSection.css";
+import { motion } from "framer-motion";
 
 function AboutSection() {
   return (
-    <div className="lg:my-12 lg:mx-16  m-4 capitalize decoration-auto text-justify ">
+    <motion.div
+    initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1, delay: 0.5}}
+  viewport={{ once: false }}
+  className="lg:my-12 lg:mx-16  m-4 capitalize decoration-auto text-justify "
+  
+> 
       <div className="container mx-auto">
         <div className="grid grid-cols-6 gap-4">
           {/* Left side text */}
@@ -80,7 +87,7 @@ function AboutSection() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

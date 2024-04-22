@@ -4,9 +4,15 @@ import thyroidPhoto from "../assets/images/improves-thyroid-function.png";
 import heartPhoto from "../assets/images/improves-heart-health.png";
 import nervePhoto from "../assets/images/promotes-a-healthy-nervous-system.png";
 import "../assets/css/Feature.css";
+import { motion } from "framer-motion";
 function Feature() {
   return (
-    <>
+    <><motion.div
+    initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1, delay: 0.5}}
+  viewport={{ once: false }}
+  
+> 
       <div className=" border benefit m-8 rounded-2xl">
         <h1 className="text-white capitalize text-3xl font-bold mb-4">
           Health Benefits Of Salt:
@@ -82,6 +88,7 @@ function Feature() {
           </div>
         </div>
       </div>
+      </motion.div>
     </>
   );
 }
