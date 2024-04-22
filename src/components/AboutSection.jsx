@@ -7,10 +7,10 @@ function AboutSection() {
       <div className="container mx-auto">
         <div className="grid grid-cols-6 gap-4">
           {/* Left side text */}
-          <div className="lg:col-span-4 col-span-6 lg:mb-0 mb-4 bg-[#013903] rounded-xl">
+          <div className="lg:col-span-4 col-span-6 lg:mb-0 mb-4 bg-[#50623A] rounded-xl">
             <div className="p-4 ">
               <h2 className="text-2xl text-white md:text-4xl font-bold mb-6 text-center">
-                <span className="text-green-700 mr-5 ">About</span>Pyoor
+                <span className="text-[#789461] mr-5 ">About</span>Pyoor
               </h2>
               <div className="abt-text">
                 <p className="mb-4 text-white">
@@ -34,7 +34,7 @@ function AboutSection() {
                   heights.
                 </p>
                 <h2 className="text-2xl text-white font-bold mb-4 text-center">
-                  <span className="text-green-700">Source -</span> Sambhar Lake
+                  <span className="text-[#789461]">Source -</span> Sambhar Lake
                 </h2>
                 <p className="mb-4 text-white">
                   Nestled in Rajasthan's arid expanse, Sambhar Lake holds the
@@ -47,7 +47,7 @@ function AboutSection() {
                   Sambhar Lake and indulge in the culinary and holistic wonders
                   of its prized creation – the renowned black salt.
                 </p>
-                <h3 className="text-2xl text-green-700 font-bold mb-4 text-center ">
+                <h3 className="text-2xl text-[#789461] font-bold mb-4 text-center ">
                     EXPORT
                 </h3>
                 <p className="mb-4 text-white">
