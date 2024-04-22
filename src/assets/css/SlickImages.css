@@ -13,13 +13,13 @@
   background-size: cover;
 }
 .img0 {
-  background-image: url("../images/1.jpg");
+  background-image: url("https://images.pexels.com/photos/2624400/pexels-photo-2624400.jpeg?auto=compress&cs=tinysrgb&w=600");
 }
 .img1 {
-  background-image: url("../images/2.jpg");
+  background-image: url("https://images.pexels.com/photos/2163944/pexels-photo-2163944.jpeg?auto=compress&cs=tinysrgb&w=600");
 }
 .img2 {
-  background-image: url("../images/3.jpg");
+  background-image: url("https://images.pexels.com/photos/4198929/pexels-photo-4198929.jpeg?auto=compress&cs=tinysrgb&w=600");
 }
 .item > .container {
   position: relative;

@@ -5,19 +5,19 @@ import "../assets/css/Navbar.css";
 const menuItems = [
   {
     name: "Home",
-    href: "#",
+    href: "", 
   },
   {
     name: "About",
-    href: "#",
+    href: "",
   },
   {
     name: "Contact",
-    href: "#",
+    href: "",
   },
   {
     name: "Team",
-    href: "#",
+    href: "",
   },
 ];
 
@@ -48,7 +48,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={`w-full bg-white navbar fixed top-0 left-0 ${
+        className={`w-full bg-white navbar fixed top-0 left-0  ${
           scrolling ? "scrolling" : ""
         }`}
       >

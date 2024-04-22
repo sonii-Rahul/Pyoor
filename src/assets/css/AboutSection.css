@@ -1,9 +1,0 @@
-.abt-text h3:before {
-  content: "";
-  width: 35px;
-  height: 2px;
-  position: absolute;
-  left: 180px;
-  background-color: #3b82f6;
-  margin-top: 17px;
-}

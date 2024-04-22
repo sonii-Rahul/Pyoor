@@ -7,7 +7,7 @@ import "../assets/css/Feature.css";
 function Feature() {
   return (
     <>
-      <div className="benefit">
+      <div className=" border benefit m-4 rounded-2xl">
         <h1 className="text-white capitalize text-3xl font-bold mb-4">
           Health Benefits Of Salt:
         </h1>
