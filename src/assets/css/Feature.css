@@ -1,0 +1,10 @@
+.benefit{
+    height: 458px;
+    text-align: center;
+    padding: 1.5rem;
+    background-image: url("../images/saltworks-gourmet-salt-guide-desktop-copy.jpg") ;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

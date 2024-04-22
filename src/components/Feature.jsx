@@ -1,104 +1,89 @@
-import React from 'react'
-
+import React from "react";
+import aidsPhoto from "../assets/images/aids-digestion.png";
+import thyroidPhoto from "../assets/images/improves-thyroid-function.png";
+import heartPhoto from "../assets/images/improves-heart-health.png";
+import nervePhoto from "../assets/images/promotes-a-healthy-nervous-system.png";
+import "../assets/css/Feature.css";
 function Feature() {
   return (
-    <div className="  px-4 p-4 lg:px-8 m-8 bg-slate-100 rounded-3xl">
-    <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
-      <div>
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
-          <svg
-            className="h-9 w-9 text-blue-600"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-            />
-          </svg>
-        </div>
-        <h3 className="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
-        <p className="mt-4 text-sm text-gray-600">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit.
+    <>
+      <div className="benefit">
+        <h1 className="text-white capitalize text-3xl font-bold mb-4">
+          Health Benefits Of Salt:
+        </h1>
+        <p className="text-white">
+          From aiding in digestion and improving the function of the thyroid
+          gland to boosting heart health, consumption of salt on a regular basis
+          can have a range of health benefits.
         </p>
       </div>
-      <div>
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
-          <svg
-            className="h-9 w-9 text-orange-600"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              d="M13 10V3L4 14h7v7l9-11h-7z"
-            />
-          </svg>
+      <div className="p-4 m-4 lg:m-8 bg-slate-100 rounded-3xl">
+        <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+          <div>
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full">
+              <img src={aidsPhoto} alt="Placeholder" className="w-full" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold text-black">
+              Aids digestion
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              Chloride, an integral component of salt, plays a crucial role in
+              the digestive process. It serves as a key element in the
+              production of Hydrochloric Acid (HCl) within the stomach,
+              facilitating efficient digestion.
+            </p>
+          </div>
+          <div>
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full">
+              <img src={heartPhoto} alt="Placeholder" className="w-full" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold text-black">
+              Improves heart health
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              Regular consumption of salt is beneficial for heart health and
+              aids in the prevention of various heart diseases. The sodium in
+              salt plays a crucial role in regulating blood pressure, which is
+              essential for maintaining cardiovascular health. Adequate sodium
+              intake helps to balance fluid levels in the body and supports
+              proper nerve and muscle function, including the contraction and
+              relaxation of the heart muscle.
+            </p>
+          </div>
+          <div>
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full">
+              <img src={thyroidPhoto} alt="Placeholder" className="w-full" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold text-black">
+              Improves thyroid function
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              A well-functioning thyroid gland is essential for maintaining a
+              healthy metabolism. The iodine content in salt supports the
+              efficient operation of the thyroid gland, ensuring its smooth
+              functioning. By providing the necessary iodine, salt plays a
+              crucial role in regulating metabolism and promoting overall
+              metabolic health.
+            </p>
+          </div>
+          <div>
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full">
+              <img src={nervePhoto} alt="Placeholder" className="w-full" />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold text-black">
+              Facilitates the well-being of the nervous system
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              The nervous system relies on sodium to regulate cellular water
+              balance. Regular salt intake supports the maintenance of a healthy
+              nervous system by ensuring proper hydration within our body's
+              cells.
+            </p>
+          </div>
         </div>
-        <h3 className="mt-8 text-lg font-semibold text-black">Fast & Easy to Load</h3>
-        <p className="mt-4 text-sm text-gray-600">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit.
-        </p>
       </div>
-      <div>
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
-          <svg
-            className="h-9 w-9 text-green-600"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            />
-          </svg>
-        </div>
-        <h3 className="mt-8 text-lg font-semibold text-black">Light & Dark Version</h3>
-        <p className="mt-4 text-sm text-gray-600">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit.
-        </p>
-      </div>
-      <div>
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100">
-          <svg
-            className="h-9 w-9 text-red-600"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
-            />
-          </svg>
-        </div>
-        <h3 className="mt-8 text-lg font-semibold text-black">Filter Blocks</h3>
-        <p className="mt-4 text-sm text-gray-600">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit.
-        </p>
-      </div>
-    </div>
-  </div>
-  )
+    </>
+  );
 }
 
-export default Feature
+export default Feature;

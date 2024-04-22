@@ -1,28 +1,45 @@
-import React from 'react';
-import { Menu, X } from 'lucide-react';
-import logo from'../assets/logo1.svg'
-
+import React, { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+import logo from "../assets/images/logo1.svg";
+import "../assets/css/Navbar.css";
 const menuItems = [
   {
-    name: 'Home',
-    href: '#',
+    name: "Home",
+    href: "#",
   },
   {
-    name: 'About',
-    href: '#',
+    name: "About",
+    href: "#",
   },
   {
-    name: 'Contact',
-    href: '#',
+    name: "Contact",
+    href: "#",
   },
   {
-    name:'Team',
-    href:'#'
-  }
+    name: "Team",
+    href: "#",
+  },
 ];
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -30,16 +47,18 @@ function Navbar() {
 
   return (
     <>
-      <div className="relative w-full bg-white ">
-        <div className="mx-auto flex max-w-7xl items-center justify-center sm:px-6 lg:px-8">
+      <div
+        className={`w-full bg-white navbar fixed top-0 left-0 ${
+          scrolling ? "scrolling" : ""
+        }`}
+      >
+        <div
+          className={`mx-auto flex max-w-7xl items-center justify-center sm:px-6 lg:px-8`}
+        >
           <div className="inline-flex items-center space-x-4">
             <span>
-              <img src={logo} alt='logo'  width="80"
-
-                
-/>
+              <img src={logo} alt="logo" width="100" />
             </span>
-            
           </div>
           <div className="hidden grow place-content-around lg:flex pr-16">
             <ul className="ml-12 inline-flex space-x-12">
@@ -47,7 +66,7 @@ function Navbar() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                    className={`text-sm font-semibold ${scrolling ? "item" : "" }`}
                   >
                     {item.name}
                   </a>
@@ -55,21 +74,17 @@ function Navbar() {
               ))}
             </ul>
           </div>
-            
+
           <div className="lg:hidden  px-4 pl-4 ">
-            <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
+            <Menu onClick={toggleMenu} className={`h-6 w-6 cursor-pointer text-${scrolling ? "white" : "black" }`} />
           </div>
           {isMenuOpen && (
-            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-              <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform transition lg:hidden">
+              <div className="divide-y-2 divide-gray-50 bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="px-5 pb-6 pt-5">
                   <div className="flex items-center justify-center ">
                     <div className="inline-flex items-center space-x-4 ">
-                      
-                       <img src={logo} alt='logo'   width="125"
-                
-/>
-                      
+                      <img src={logo} alt="logo" width="125" />
                     </div>
                     <div className="-mr-2">
                       <button
