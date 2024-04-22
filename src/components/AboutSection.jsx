@@ -3,15 +3,15 @@ import "../assets/css/AboutSection.css";
 
 function AboutSection() {
   return (
-    <div className="lg:my-12 lg:mx-16  m-6 capitalize decoration-auto text-justify ">
+    <div className="lg:my-12 lg:mx-16  m-4 capitalize decoration-auto text-justify ">
       <div className="container mx-auto">
         <div className="grid grid-cols-6 gap-4">
           {/* Left side text */}
           <div className="lg:col-span-4 col-span-6 lg:mb-0 mb-4  rounded-xl">
-            <div className="m-4 p-4 ">
+            <div className="md:m-4 p-4 ">
               
               
-                <div className="bg-[#50623A] rounded-2xl m-2 p-2 ">
+                <div className="bg-[#50623A] rounded-2xl md:m-2 p-2 ">
                 <h2 className="text-2xl text-white md:text-4xl font-bold mb-6 text-center">
                 <span className="text-[#789461] mr-5">About</span>Pyoor
               </h2>
@@ -36,7 +36,7 @@ function AboutSection() {
                   heights.
                 </p>
                 </div>
-                <div className="bg-[#50623A]  rounded-2xl m-2 p-2">
+                <div className="bg-[#50623A]  rounded-2xl md:m-2 p-2 my-2">
                 <h2 className="text-2xl text-white font-bold mb-4 text-center">
                   <span className="text-[#789461]">Source -</span> Sambhar Lake
                 </h2>
@@ -52,7 +52,7 @@ function AboutSection() {
                   of its prized creation – the renowned black salt.
                 </p>
                 </div>
-                <div className="bg-[#50623A] rounded-2xl m-2 p-2">
+                <div className="bg-[#50623A] rounded-2xl md:m-2 my-2 p-2">
                 <h3 className="text-2xl text-[#789461] font-bold mb-4 text-center ">
                     EXPORT
                 </h3>
