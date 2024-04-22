@@ -57,7 +57,7 @@ function Navbar() {
         >
           <div className="inline-flex items-center space-x-4">
             <span>
-              <img src={logo} alt="logo" width="100" />
+              <img src={logo} alt="logo" width="75" />
             </span>
           </div>
           <div className="hidden grow place-content-around lg:flex pr-16">

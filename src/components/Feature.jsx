@@ -7,7 +7,7 @@ import "../assets/css/Feature.css";
 function Feature() {
   return (
     <>
-      <div className=" border benefit m-4 rounded-2xl">
+      <div className=" border benefit m-8 rounded-2xl">
         <h1 className="text-white capitalize text-3xl font-bold mb-4">
           Health Benefits Of Salt:
         </h1>
@@ -17,7 +17,7 @@ function Feature() {
           can have a range of health benefits.
         </p>
       </div>
-      <div className="p-4 m-4 lg:m-8 bg-slate-100 rounded-3xl">
+      <div className="p-4 m-4 lg:m-8 bg-[#DBE7C9] rounded-3xl">
         <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
           <div>
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full">

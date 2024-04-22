@@ -41,14 +41,14 @@ const SlickImages = () => {
     },
   };
   return (
-    <div className="slick-container">
+    <div className=" md:m-16 md:mt-30 m-2">
     {/* <div className="mt-24 w-27/9 mx-auto"> */}
-      <Slider {...settings}>
+      <Slider {...settings} className="m-4">
         {SLIDER_IMAGES.map((item) => {
           return (
             <div
               key={item.id}
-              className={`item img${item.id}`}
+              className={`item img${item.id} rounded-xl`}
             >
               <div className="box text-center">
                 <div className="container">
