@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../assets/images/logo1.svg";
-let footermain = " relative overflow-hidden bg-zinc-100  py-8 ";
+let footermain = "relative overflow-hidden bg-zinc-100   ";
 let maindiv = "container relative z-10 mx-auto px-4";
-let innerdiv = "-m-8 flex flex-wrap items-center justify-between";
+let innerdiv = "-m-4 flex flex-wrap items-center justify-between";
 let innerequal = "w-auto p-8";
 
 export function FooterOne() {

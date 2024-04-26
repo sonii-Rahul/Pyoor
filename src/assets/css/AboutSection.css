@@ -1,0 +1,6 @@
+.bgimage{
+    background-image: url(../images/oooscillate.svg);
+    background-repeat:repeat-x;
+    z-index: 100;
+    
+}

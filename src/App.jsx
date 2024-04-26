@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth ">
       <Navbar />
       <SlickImages />
       <AboutSection />

@@ -8,21 +8,21 @@ function AboutSection() {
     initial={{ opacity: 0 }}
   whileInView={{ opacity: 1, delay: 0.5}}
   viewport={{ once: false }}
-  className="lg:my-12 lg:mx-16  m-4 capitalize decoration-auto text-justify "
+  className=" capitalize bgimage text-justify "
   
 > 
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <div className="grid grid-cols-6 gap-4">
           {/* Left side text */}
           <div className="lg:col-span-4 col-span-6 lg:mb-0 mb-4  rounded-xl">
             <div className="md:m-4 p-4 ">
               
               
-                <div className="bg-[#50623A] rounded-2xl md:m-2 p-2 ">
+                <div className="bg-[#50623A] rounded-2xl md:m-2 p-2 shadow-2xl ">
                 <h2 className="text-2xl text-white md:text-4xl font-bold mb-6 text-center">
                 <span className="text-[#789461] mr-5">About</span>Pyoor
               </h2>
-                <p className="mb-4 m-4 text-white  ">
+                <p className="mb-4 m-4 text-white   ">
                   Welcome to Pyoor, your gateway to a world of purity and
                   flavor. At Pyoor, we embark on a journey to redefine the
                   essence of salt, offering an exquisite range that includes the
@@ -77,7 +77,7 @@ function AboutSection() {
             </div>
           </div>
           {/* Right side image */}
-          <div className="lg:col-span-2 col-span-6">
+          <div className="lg:col-span-2 col-span-6 ">
             <img
              
               src="https://images.pexels.com/photos/3298782/pexels-photo-3298782.jpeg?auto=compress&cs=tinysrgb&w=600"
