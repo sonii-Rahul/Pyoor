@@ -1,13 +1,9 @@
 
 
-.slick-container {
-  margin-top: 100px;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .item {
-  height: 480px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height:400px;
   width: 100%;
   position: relative;
   overflow: hidden;

@@ -48,7 +48,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={`w-full bg-white navbar fixed top-0 left-0  ${
+        className={`w-full bg-wgite navbar fixed top-0 left-0  ${
           scrolling ? "scrolling" : ""
         }`}
       >

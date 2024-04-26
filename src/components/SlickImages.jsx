@@ -41,7 +41,7 @@ const SlickImages = () => {
     },
   };
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-[#efefef] mt-16 ">
     <div className=" md:m-16 m-2">
     {/* <div className="mt-24 w-27/9 mx-auto"> */}
       <Slider {...settings} className="m-4">
