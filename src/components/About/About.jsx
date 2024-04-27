@@ -4,16 +4,21 @@ import Slickimages from "../Home/SlickImages.jsx"
 import { HeroTwo } from './HeroTwo.jsx'
 import OurMission from './OurMission.jsx'
 import OurStory from './OurStory.jsx'
+import {FooterOne} from "../Home/FooterOne.jsx"
+import Slick from './Slick.jsx'
 
 function About() {
   return (
    <>
    <Navbar/>
-   <Slickimages/>
+  <Slick/>
    <OurMission/>
    <OurStory/>
 
    <HeroTwo/>
+   <FooterOne/>
+
+  
    </>
   )
 }

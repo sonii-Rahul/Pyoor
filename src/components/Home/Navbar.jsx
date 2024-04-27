@@ -17,10 +17,7 @@ const menuItems = [
     name: "Contact",
     href: "/contact",
   },
-  {
-    name: "Team",
-    href: "/team",
-  },
+ 
 ];
 
 function Navbar() {
