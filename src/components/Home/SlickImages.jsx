@@ -1,7 +1,7 @@
 import React, {useState } from "react";
-import "../assets/css/SlickImages.css";
+import "../../assets/css/SlickImages.css";
 import Slider from "react-slick";
-import SLIDER_IMAGES from "../assets/constants/SliderImages";
+import SLIDER_IMAGES from "../../assets/constants/SliderImages";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
@@ -41,15 +41,15 @@ const SlickImages = () => {
     },
   };
   return (
-    <div className="bg-[#efefef] mt-16 ">
-    <div className=" md:m-16 m-2">
+    <div className="bg-[#F5E9E4] rounded-xl ">
+    <div className="">
     {/* <div className="mt-24 w-27/9 mx-auto"> */}
-      <Slider {...settings} className="m-4">
+      <Slider {...settings} className=" mt-16 pt-4">
         {SLIDER_IMAGES.map((item) => {
           return (
             <div
               key={item.id}
-              className={`item img${item.id} rounded-xl`}
+              className={`item img${item.id} `}
             >
               <div className="box text-center">
                 <div className="container">

@@ -1,24 +1,23 @@
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar.jsx";
-import Feature from "./components/Feature.jsx";
-import { CardOne } from "./components/CardOne.jsx";
-import { FooterOne } from "./components/FooterOne.jsx";
-import SlickImages from "./components/SlickImages.jsx";
-import AboutSection from "./components/AboutSection.jsx";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from "./components/Home/Home.jsx" 
+import Navbar from "./components/Home/Navbar.jsx";
+import About from "./components/About/About.jsx";
+import Contact from "./components/Contactus/Contact.jsx";
+import Team from "./components/Team/Team.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="scroll-smooth ">
-      <Navbar />
-      <SlickImages />
-      <AboutSection />
-      <Feature />
-      <CardOne />
-      <FooterOne />
-    </div>
+    <><BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/team" element={<Team/>}/>
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 

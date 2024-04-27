@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/images/logo1.svg";
-import "../assets/css/Navbar.css";
+import logo from "../../assets/images/logo1.svg";
+import "../../assets/css/Navbar.css";
+import { Link } from 'react-router-dom';
+
 const menuItems = [
   {
     name: "Home",
-    href: "", 
+    href: "/", 
   },
   {
     name: "About",
-    href: "",
+    href: "/about",
   },
   {
     name: "Contact",
-    href: "",
+    href: "/contact",
   },
   {
     name: "Team",
-    href: "",
+    href: "/team",
   },
 ];
 
@@ -48,7 +50,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={`w-full bg-wgite navbar fixed top-0 left-0  ${
+        className={`w-full bg-[#F5E9E4] navbar fixed top-0 left-0 text-[#003630] tracking-wider  ${
           scrolling ? "scrolling" : ""
         }`}
       >
@@ -64,12 +66,12 @@ function Navbar() {
             <ul className="ml-12 inline-flex space-x-12">
               {menuItems.map((item) => (
                 <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className={`text-sm font-semibold ${scrolling ? "item" : "" }`}
+                  <Link
+                    to={item.href}
+                    className={`text-md font-semibold ${scrolling ? "item" : "" } tracking-widest font-caveat`}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

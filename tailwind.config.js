@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         'salsa': ['Salsa', 'cursive'],
+        'caveat': ['Caveat', 'cursive'],
       },
       fontWeight: {
         regular: 400,
