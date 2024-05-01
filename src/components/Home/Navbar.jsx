@@ -18,6 +18,7 @@ const menuItems = [
     href: "/contact",
   },
  
+ 
 ];
 
 function Navbar() {
@@ -65,7 +66,7 @@ function Navbar() {
                 <li key={item.name}>
                   <Link
                     to={item.href}
-                    className={`text-md font-semibold ${scrolling ? "item" : "" } tracking-widest font-caveat`}
+                    className={`text-xl  font-semibold ${scrolling ? "item" : "" } tracking-widest font-caveat text-[#003630] hover:text-green-500`}
                   >
                     {item.name}
                   </Link>

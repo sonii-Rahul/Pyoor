@@ -11,7 +11,7 @@ function Feature() {
     initial={{ opacity: 0 }}
   whileInView={{ opacity: 1, delay: 0.5}}
 
-  className="bg-[#09302B] md:-mt-40 "
+  className="bg-[#09302B] md:-mt-28 "
   
 >    
       <div className=" text-center text-white font-bold mb-8 ">
